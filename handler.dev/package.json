@@ -14,6 +14,8 @@
     "prettier": "prettier --list-different './**/*.{js,ts}'",
     "typecheck": "tsc --noEmit",
     "dev": "webpack -w",
+    "build:app": "webpack",
+    "build": "webpack && sam build --use-container",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
